@@ -1,0 +1,9 @@
+name: Pull Request Workflow
+on: 
+  pull_request:
+jobs:
+    pull-request-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Print Pull Request triggered
+          run: echo "This workflow is triggered when a pull request is triggered"
